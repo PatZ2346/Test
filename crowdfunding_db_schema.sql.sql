@@ -32,4 +32,5 @@ CREATE TABLE "Campaign" (
     "subcategory_id" VARCHAR(10),
     FOREIGN KEY ("category_id") REFERENCES "Category" ("category_id"),
     FOREIGN KEY ("subcategory_id") REFERENCES "Subcategory" ("subcategory_id")
+    FOREIGN KEY ("contact_id") REFERENCES "Contacts" ("contact_id")
 );
